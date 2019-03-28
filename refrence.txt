@@ -1,0 +1,4 @@
+https://ithelp.ithome.com.tw/articles/10157484
+http://enjoy01coding.blogspot.com/2017/05/aspnet-mvc-entity-framework-repository.html
+https://dotblogs.com.tw/mantou1201/2014/06/13/145527
+http://kevintsengtw.blogspot.com/2013/09/aspnet-mvc-autofac.html#.U5pouPmSyo9
