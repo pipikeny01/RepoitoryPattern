@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using RepoitoryPattern.Models;
 using RepoitoryPattern.AppCode;
+using RepoitoryPattern.AppCode.Extension;
 
 namespace RepoitoryPattern.Controllers
 {
@@ -17,8 +18,8 @@ namespace RepoitoryPattern.Controllers
     public class CustomersController : Controller
     {
         //private NorthwindEntities db = new NorthwindEntities();
-        //private IUnitOfWork unitOfWork;
-        //private IRepository<Customers> repo;
+        private IUnitOfWork unitOfWork;
+        private IRepository<Customers> repo;
         private ICustomerService customerService;
         //public CustomersController(): this(new DBRepository<Customers>(new NorthwindEntities()))
         //{
@@ -30,7 +31,8 @@ namespace RepoitoryPattern.Controllers
         {
             customerService = incustomerService;
 
-            //repo = unitOfWork.Repository<Customers>();
+            repo = unitOfWork.Repository<Customers>();
+            
         }
 
         // GET: Customers

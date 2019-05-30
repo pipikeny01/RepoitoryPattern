@@ -30,7 +30,7 @@ namespace RepoitoryPattern.AppCode
                 throw new ArgumentNullException("factory is null");
             }
 
-            this.Context = factory.GetDbContext();
+            this.Context = factory.GetDbContext();          
         }
 
         public DBRepository(NorthwindEntities inContext)
@@ -52,7 +52,7 @@ namespace RepoitoryPattern.AppCode
         /// </summary>
         /// <param name="predicate">要取得的Where條件。</param>
         /// <returns>取得第一筆符合條件的內容。</returns>
-        public TEntity Read(Expression<Func<TEntity, bool>> predicate)
+        public TEntity GetFirst(Expression<Func<TEntity, bool>> predicate)
         {
             return Context.Set<TEntity>().Where(predicate).FirstOrDefault();
         }
@@ -61,10 +61,21 @@ namespace RepoitoryPattern.AppCode
         /// 取得Entity全部筆數的IQueryable。
         /// </summary>
         /// <returns>Entity全部筆數的IQueryable。</returns>
-        public IQueryable<TEntity> Reads()
+        public IQueryable<TEntity> Select()
         {
             return Context.Set<TEntity>().AsQueryable();
         }
+
+        /// <summary>
+        /// 取得Entity全部筆數的IQueryable,可設定Include參數
+        /// </summary>
+        /// <returns>Entity全部筆數的IQueryable。</returns>
+        public IQueryable<TEntity> SelectInclude(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes)
+        {
+            var query = Select().Where(predicate);
+            return includes.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
+        }
+
 
         /// <summary>
         /// 更新一筆Entity內容。

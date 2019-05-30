@@ -19,7 +19,7 @@ namespace RepoitoryPattern.AppCode.Service
 
         public IEnumerable<Customers> Reads()
         {
-            return _repository.Reads();
+            return _repository.Select();
         }
 
         public IResult Create(Customers instance)

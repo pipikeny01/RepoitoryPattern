@@ -23,13 +23,13 @@ namespace RepoitoryPattern.AppCode
         /// </summary>
         /// <param name="predicate">要取得的Where條件。</param>
         /// <returns>取得第一筆符合條件的內容。</returns>
-        T Read(Expression<Func<T, bool>> predicate);
+        T GetFirst(Expression<Func<T, bool>> predicate);
 
         /// <summary>
         /// 取得Entity全部筆數的IQueryable。
         /// </summary>
         /// <returns>Entity全部筆數的IQueryable。</returns>
-        IQueryable<T> Reads();
+        IQueryable<T> Select();
 
         /// <summary>
         /// 更新一筆資料的內容。
