@@ -1,11 +1,11 @@
-﻿using System;
+﻿using RepoitoryPattern.Core;
+using RepoitoryPattern.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
-using RepoitoryPattern.Core;
-using RepoitoryPattern.Models;
 
 namespace RepoitoryPattern.Repository
 {
@@ -26,12 +26,12 @@ namespace RepoitoryPattern.Repository
         /// <param name="inContext">Entity所在的Context</param>
         public DBRepository(IDbContextFactory factory)
         {
-            if(factory == null)
+            if (factory == null)
             {
                 throw new ArgumentNullException("factory is null");
             }
 
-            this.Context = factory.GetDbContext();          
+            this.Context = factory.GetDbContext();
         }
 
         public DBRepository(NorthwindEntities inContext)
@@ -45,7 +45,7 @@ namespace RepoitoryPattern.Repository
         /// <param name="entity">要新增到資料的庫的Entity</param>
         public void Create(TEntity entity)
         {
-            Context.Set<TEntity>().Add(entity);
+            this.Context.Set<TEntity>().Add(entity);
         }
 
         /// <summary>

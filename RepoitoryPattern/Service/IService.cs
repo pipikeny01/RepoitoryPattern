@@ -14,6 +14,18 @@ namespace RepoitoryPattern.Service
         where T : class
     {
 
+
+        /// <summary>
+        /// 取得全部資料並且轉成對應的ViewModel
+        /// </summary>
+        /// <typeparam name="TViewModel">ViewModel的形態</typeparam>
+        /// <param name="wherePredicate">過濾邏輯</param>
+        /// <param name="includes">需要Include的Entity</param>
+        /// <returns>取得轉換過的ViewModel List</returns>
+        List<TViewModel> SelectToViewModel<TViewModel>(
+            params Expression<Func<T, object>>[] includes);
+
+
         /// <summary>
         /// 取得符合條件的Entity並且轉成對應的ViewModel
         /// </summary>
@@ -21,7 +33,7 @@ namespace RepoitoryPattern.Service
         /// <param name="wherePredicate">過濾邏輯</param>
         /// <param name="includes">需要Include的Entity</param>
         /// <returns>取得轉換過的ViewModel List</returns>
-        List<TViewModel> GetListToViewModel<TViewModel>(Expression<Func<T, bool>> wherePredicate,
+        List<TViewModel> SelectToViewModel<TViewModel>(Expression<Func<T, bool>> wherePredicate,
             params Expression<Func<T, object>>[] includes);
 
         /// <summary>
@@ -31,7 +43,7 @@ namespace RepoitoryPattern.Service
         /// <param name="wherePredicate">過濾邏輯</param>
         /// <param name="includes">需要Include的Entity</param>
         /// <returns>取得轉換過的ViewModel或者是null</returns>
-        TViewModel GetSpecificDetailToViewModel<TViewModel>(Expression<Func<T, bool>> wherePredicate,
+        TViewModel GetDetailToViewModel<TViewModel>(Expression<Func<T, bool>> wherePredicate,
             params Expression<Func<T, object>>[] includes);
 
 

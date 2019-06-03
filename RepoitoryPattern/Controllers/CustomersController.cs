@@ -1,5 +1,5 @@
 ﻿using RepoitoryPattern.Models;
-using RepoitoryPattern.Repository;
+using RepoitoryPattern.Models.ViewModel;
 using RepoitoryPattern.Service;
 using System.Net;
 using System.Web.Mvc;
@@ -10,17 +10,9 @@ namespace RepoitoryPattern.Controllers
     //https://ithelp.ithome.com.tw/articles/10158249
     public class CustomersController : Controller
     {
-        //private NorthwindEntities db = new NorthwindEntities();
-        private IRepository<Customers> repo;
 
         private ICustomerService customerService;
 
-        //public CustomersController(): this(new DBRepository<Customers>(new NorthwindEntities()))
-        //{
-        //}
-        public CustomersController()
-        {
-        }
 
         public CustomersController(ICustomerService incustomerService)
         {
@@ -31,7 +23,7 @@ namespace RepoitoryPattern.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            return View(customerService.Reads());
+            return View(customerService.SelectToViewModel<CustomerViewModel>());
         }
 
         // GET: Customers/Details/5
@@ -41,7 +33,7 @@ namespace RepoitoryPattern.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = customerService.GetByID(int.Parse(id));
+            Customers customers = customerService.GetDetailToViewModel<Customers>(p => p.CustomerID == id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -64,9 +56,9 @@ namespace RepoitoryPattern.Controllers
         {
             if (ModelState.IsValid)
             {
-                //db.Customers.Add(customers);
-                //await db.SaveChangesAsync();
-                customerService.Create(customers);
+                ////db.Customers.Add(customers);
+                ////await db.SaveChangesAsync();
+                //customerService.Create(customers);
                 return RedirectToAction("Index");
             }
 
