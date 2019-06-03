@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using RepoitoryPattern.Core;
 using RepoitoryPattern.Models;
+using RepoitoryPattern.Repository;
 
-namespace RepoitoryPattern.AppCode.Service
+namespace RepoitoryPattern.Service
 {
     /// <summary>
     /// Service layer 處理 對應Controller的商業邏輯

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Core
 {
     public class Result : IResult
     {

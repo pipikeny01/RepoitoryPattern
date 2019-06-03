@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Core
 {
     public interface IResult
     {

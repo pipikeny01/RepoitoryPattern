@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
-using RepoitoryPattern.AppCode;
+using RepoitoryPattern.Core;
+using RepoitoryPattern.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Core
 {
     public class DbContextFactory : IDbContextFactory
     {

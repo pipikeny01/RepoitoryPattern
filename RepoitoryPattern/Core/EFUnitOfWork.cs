@@ -1,11 +1,12 @@
-﻿using System;
+﻿using RepoitoryPattern.Repository;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Core
 {
     /// <summary>
     /// 實作Entity Framework Unit Of Work的class

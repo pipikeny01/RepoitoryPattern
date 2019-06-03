@@ -4,9 +4,10 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
+using RepoitoryPattern.Core;
 using RepoitoryPattern.Models;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Repository
 {
     /// <summary>
     /// 實作Entity Framework Generic Repository 的 Class。

@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using RepoitoryPattern.Models;
+using RepoitoryPattern.Repository;
+using RepoitoryPattern.Service;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using RepoitoryPattern.Models;
-using RepoitoryPattern.AppCode;
-using RepoitoryPattern.AppCode.Extension;
 
 namespace RepoitoryPattern.Controllers
 {
@@ -18,27 +11,27 @@ namespace RepoitoryPattern.Controllers
     public class CustomersController : Controller
     {
         //private NorthwindEntities db = new NorthwindEntities();
-        private IUnitOfWork unitOfWork;
         private IRepository<Customers> repo;
+
         private ICustomerService customerService;
+
         //public CustomersController(): this(new DBRepository<Customers>(new NorthwindEntities()))
         //{
         //}
         public CustomersController()
         {
         }
+
         public CustomersController(ICustomerService incustomerService)
         {
             customerService = incustomerService;
 
-            repo = unitOfWork.Repository<Customers>();
-            
         }
 
         // GET: Customers
         public ActionResult Index()
         {
-            return View( customerService.Reads());
+            return View(customerService.Reads());
         }
 
         // GET: Customers/Details/5

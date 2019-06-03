@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Core
 {
     public interface IDbContextFactory
     {

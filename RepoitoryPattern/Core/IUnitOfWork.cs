@@ -1,9 +1,10 @@
-﻿using System;
+﻿using RepoitoryPattern.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.AppCode
+namespace RepoitoryPattern.Core
 {
     /// <summary>
     /// 實作Unit Of Work的interface。
