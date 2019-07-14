@@ -24,7 +24,8 @@ namespace MvcTemplate.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            return View(customerService.SelectToViewModel<CustomerViewModel>().FirstOrDefault());
+            var r = customerService.SelectToViewModel<CustomerViewModel>();
+            return View(customerService.SelectToViewModel<CustomerViewModel>());
         }
 
         // GET: Customers/Details/5

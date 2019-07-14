@@ -10,3 +10,37 @@
 
 2019-07-14 16:45:20.0510 | FATAL | MvcTemplate.Controllers.HomeController | Error 
 
+2019-07-14 16:53:11.3903 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 16:58:01.5211 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 17:00:53.3833 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 17:21:27.8778 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 17:39:26.4993 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:17:15.8359 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:18:38.4279 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:19:21.3263 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:24:46.8739 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:31:13.5997 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:32:29.8373 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:36:47.5409 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:39:03.3612 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:40:13.3945 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:42:54.3811 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:44:01.5189 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 18:45:56.8197 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+

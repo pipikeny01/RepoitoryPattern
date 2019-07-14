@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Heroic.AutoMapper;
 
 namespace MvcTemplate
 {
@@ -18,6 +19,9 @@ namespace MvcTemplate
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             AutofacConfig.Register();
+
+            //https://github.com/MattHoneycutt/HeroicFramework/tree/master/Heroic.AutoMapper
+            HeroicAutoMapperConfigurator.LoadMapsFromCallerAndReferencedAssemblies();
         }
     }
 }

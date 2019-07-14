@@ -28,7 +28,7 @@ namespace MvcTemplate
 
             // 註冊DbContextFactory
             string connectionString =
-                System.Configuration.ConfigurationManager.ConnectionStrings["NorthwindEntities"].ConnectionString;
+                System.Configuration.ConfigurationManager.ConnectionStrings["Entities"].ConnectionString;
 
             builder.RegisterType<DbContextFactory>()
                 .WithParameter("connectionString", connectionString)

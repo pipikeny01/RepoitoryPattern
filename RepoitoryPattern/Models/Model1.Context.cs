@@ -13,10 +13,10 @@ namespace MvcTemplate.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NorthwindEntities : DbContext
+    public partial class Entities : DbContext
     {
-        public NorthwindEntities()
-            : base("name=NorthwindEntities")
+        public Entities()
+            : base("name=Entities")
         {
         }
     

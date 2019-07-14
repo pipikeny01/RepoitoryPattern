@@ -1,6 +1,8 @@
-﻿namespace MvcTemplate.Models.ViewModel
+﻿using Heroic.AutoMapper;
+
+namespace MvcTemplate.Models.ViewModel
 {
-    public class CustomerViewModel
+    public class CustomerViewModel : IMapFrom<Customers>
     {
         public string CustomerID { get; set; }
         public string CompanyName { get; set; }

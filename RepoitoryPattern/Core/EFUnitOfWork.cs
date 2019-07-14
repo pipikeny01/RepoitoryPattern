@@ -8,11 +8,13 @@ using System.Web;
 
 namespace MvcTemplate.Core
 {
+    //https://dotblogs.com.tw/gelis/2014/09/08/146492
     /// <summary>
     /// 實作Entity Framework Unit Of Work的class
     /// </summary>
     public class EFUnitOfWork : IUnitOfWork
     {
+        private readonly IDbContextFactory _databaseFactory;
         private readonly DbContext _context;
 
         private bool _disposed;
@@ -22,9 +24,10 @@ namespace MvcTemplate.Core
         /// 設定此Unit of work(UOF)的Context。
         /// </summary>
         /// <param name="context">設定UOF的context</param>
-        public EFUnitOfWork(DbContext context)
+        public EFUnitOfWork(IDbContextFactory databaseFactory)
         {
-            _context = context;
+            _databaseFactory = databaseFactory;
+            _context = _context ?? _databaseFactory.GetDbContext();
         }
 
         /// <summary>
@@ -83,7 +86,7 @@ namespace MvcTemplate.Core
 
                 var repositoryInstance =
                     Activator.CreateInstance(repositoryType
-                            .MakeGenericType(typeof(T)), _context);
+                            .MakeGenericType(typeof(T)), _databaseFactory);
 
                 _repositories.Add(type, repositoryInstance);
             }

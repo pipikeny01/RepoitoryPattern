@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using AutoMapper;
+using MvcTemplate.Models;
 
 namespace MvcTemplate.Service
 {
@@ -30,6 +32,10 @@ namespace MvcTemplate.Service
                 data.Include(item);
             }
 
+            //var config = new MapperConfiguration(cfg => cfg.CreateMap<Customers, CustomerViewModel>());
+            //config.AssertConfigurationIsValid();//←證驗應對
+            //var mapper = config.CreateMapper();
+            //return mapper.Map<List<CustomerViewModel>>(data);
             return AutoMapper.Mapper.Map<List<TViewModel>>(data);
         }
 

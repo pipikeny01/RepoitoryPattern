@@ -16,7 +16,7 @@ namespace MvcTemplate.Repository
     public class DBRepository<TEntity> : IRepository<TEntity>
         where TEntity : class
     {
-        private NorthwindEntities inContext;
+        private Entities inContext;
 
         private DbContext Context { get; set; }
 
@@ -34,7 +34,7 @@ namespace MvcTemplate.Repository
             this.Context = factory.GetDbContext();
         }
 
-        public DBRepository(NorthwindEntities inContext)
+        public DBRepository(Entities inContext)
         {
             this.inContext = inContext;
         }
