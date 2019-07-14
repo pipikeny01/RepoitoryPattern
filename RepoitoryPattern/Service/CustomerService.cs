@@ -1,6 +1,5 @@
 ﻿using MvcTemplate.Models;
 using MvcTemplate.Core;
-using MvcTemplate.Models;
 
 namespace MvcTemplate.Service
 {

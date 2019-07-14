@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
+using MvcTemplate.Core.Log;
 
 namespace MvcTemplate
 {
@@ -42,6 +43,9 @@ namespace MvcTemplate
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
                    .Where(t => t.Name.EndsWith("Service"))
                    .AsImplementedInterfaces();
+
+            //註冊LogModule
+            builder.RegisterModule<NLogModule>();
 
             // 建立容器
             IContainer container = builder.Build();

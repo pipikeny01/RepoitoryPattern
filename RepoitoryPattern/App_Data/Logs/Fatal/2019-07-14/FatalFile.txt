@@ -1,0 +1,12 @@
+2019-07-14 16:37:27.2898 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 16:41:00.5174 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 16:41:04.0603 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 16:41:58.6587 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 16:42:23.6800 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+
+2019-07-14 16:45:20.0510 | FATAL | MvcTemplate.Controllers.HomeController | Error 
+

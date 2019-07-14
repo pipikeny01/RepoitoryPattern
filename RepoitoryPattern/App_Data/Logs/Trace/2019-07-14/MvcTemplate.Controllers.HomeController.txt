@@ -1,0 +1,12 @@
+2019-07-14 16:37:27.2589 | TRACE | MvcTemplate.Controllers.HomeController | start 
+
+2019-07-14 16:41:00.4964 | TRACE | MvcTemplate.Controllers.HomeController | start 
+
+2019-07-14 16:41:04.0603 | TRACE | MvcTemplate.Controllers.HomeController | start 
+
+2019-07-14 16:41:58.6318 | TRACE | MvcTemplate.Controllers.HomeController | start 
+
+2019-07-14 16:42:23.6571 | TRACE | MvcTemplate.Controllers.HomeController | start 
+
+2019-07-14 16:45:20.0271 | TRACE | MvcTemplate.Controllers.HomeController | start 
+
