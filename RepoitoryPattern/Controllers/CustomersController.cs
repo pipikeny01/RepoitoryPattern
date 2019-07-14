@@ -1,4 +1,5 @@
-﻿using RepoitoryPattern.Models;
+﻿using System.Linq;
+using RepoitoryPattern.Models;
 using RepoitoryPattern.Models.ViewModel;
 using RepoitoryPattern.Service;
 using System.Net;
@@ -23,7 +24,7 @@ namespace RepoitoryPattern.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            return View(customerService.SelectToViewModel<CustomerViewModel>());
+            return View(customerService.SelectToViewModel<CustomerViewModel>().FirstOrDefault());
         }
 
         // GET: Customers/Details/5
