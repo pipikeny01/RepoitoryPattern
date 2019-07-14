@@ -1,10 +1,10 @@
-﻿using RepoitoryPattern.Repository;
+﻿using MvcTemplate.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.Core
+namespace MvcTemplate.Core
 {
     /// <summary>
     /// 實作Unit Of Work的interface。

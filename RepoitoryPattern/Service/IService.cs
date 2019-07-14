@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
 
-namespace RepoitoryPattern.Service
+namespace MvcTemplate.Service
 {
     /// <summary>
     /// Service服務層內容的Interface

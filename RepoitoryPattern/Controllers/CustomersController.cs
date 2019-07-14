@@ -1,11 +1,11 @@
 ﻿using System.Linq;
-using RepoitoryPattern.Models;
-using RepoitoryPattern.Models.ViewModel;
-using RepoitoryPattern.Service;
+using MvcTemplate.Models;
+using MvcTemplate.Models.ViewModel;
+using MvcTemplate.Service;
 using System.Net;
 using System.Web.Mvc;
 
-namespace RepoitoryPattern.Controllers
+namespace MvcTemplate.Controllers
 {
     //https://ithelp.ithome.com.tw/articles/10157484
     //https://ithelp.ithome.com.tw/articles/10158249

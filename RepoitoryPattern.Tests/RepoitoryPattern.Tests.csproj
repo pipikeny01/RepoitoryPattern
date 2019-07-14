@@ -97,9 +97,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RepoitoryPattern\RepoitoryPattern.csproj">
+    <ProjectReference Include="..\RepoitoryPattern\MvcTemplate.csproj">
       <Project>{D2D2CE02-46E4-40AA-9FB3-ED35E83B85E8}</Project>
-      <Name>RepoitoryPattern</Name>
+      <Name>MvcTemplate</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

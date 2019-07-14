@@ -1,7 +1,8 @@
-﻿using RepoitoryPattern.Core;
-using RepoitoryPattern.Models;
+﻿using MvcTemplate.Models;
+using MvcTemplate.Core;
+using MvcTemplate.Models;
 
-namespace RepoitoryPattern.Service
+namespace MvcTemplate.Service
 {
     /// <summary>
     /// Service layer 處理 對應Controller的商業邏輯

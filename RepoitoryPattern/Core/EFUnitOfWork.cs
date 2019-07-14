@@ -1,4 +1,4 @@
-﻿using RepoitoryPattern.Repository;
+﻿using MvcTemplate.Repository;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.Core
+namespace MvcTemplate.Core
 {
     /// <summary>
     /// 實作Entity Framework Unit Of Work的class

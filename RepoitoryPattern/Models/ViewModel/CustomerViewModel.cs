@@ -1,4 +1,4 @@
-﻿namespace RepoitoryPattern.Models.ViewModel
+﻿namespace MvcTemplate.Models.ViewModel
 {
     public class CustomerViewModel
     {

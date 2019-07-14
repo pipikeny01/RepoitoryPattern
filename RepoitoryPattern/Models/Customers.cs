@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RepoitoryPattern.Models
+namespace MvcTemplate.Models
 {
     using System;
     using System.Collections.Generic;

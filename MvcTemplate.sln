@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoitoryPattern", "RepoitoryPattern\RepoitoryPattern.csproj", "{D2D2CE02-46E4-40AA-9FB3-ED35E83B85E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTemplate", "RepoitoryPattern\MvcTemplate.csproj", "{D2D2CE02-46E4-40AA-9FB3-ED35E83B85E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoitoryPattern.Tests", "RepoitoryPattern.Tests\RepoitoryPattern.Tests.csproj", "{19CCEF3E-90DA-4838-B603-491DCEB9B33C}"
 EndProject

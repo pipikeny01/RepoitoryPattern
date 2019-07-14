@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace RepoitoryPattern.Core
+namespace MvcTemplate.Core
 {
     public interface IDbContextFactory
     {

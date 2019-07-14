@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RepoitoryPattern;
-using RepoitoryPattern.Controllers;
+using MvcTemplate;
+using MvcTemplate.Controllers;
 
-namespace RepoitoryPattern.Tests.Controllers
+namespace MvcTemplate.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest

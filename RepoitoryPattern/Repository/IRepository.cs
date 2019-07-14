@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
 
-namespace RepoitoryPattern.Repository
+namespace MvcTemplate.Repository
 {
     /// <summary>
     /// 代表一個Repository的interface。

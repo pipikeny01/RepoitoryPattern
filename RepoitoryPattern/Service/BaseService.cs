@@ -1,11 +1,11 @@
-﻿using RepoitoryPattern.Core;
+﻿using MvcTemplate.Core;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace RepoitoryPattern.Service
+namespace MvcTemplate.Service
 {
     /// <summary>
     /// 通用行的Service layer實作

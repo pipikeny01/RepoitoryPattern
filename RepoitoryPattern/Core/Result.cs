@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RepoitoryPattern.Core
+namespace MvcTemplate.Core
 {
     public class Result : IResult
     {

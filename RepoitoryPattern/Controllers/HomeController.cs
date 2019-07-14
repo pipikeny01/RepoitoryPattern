@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace RepoitoryPattern.Controllers
+namespace MvcTemplate.Controllers
 {
     public class HomeController : Controller
     {

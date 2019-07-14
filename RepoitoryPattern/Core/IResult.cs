@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RepoitoryPattern.Core
+namespace MvcTemplate.Core
 {
     public interface IResult
     {
